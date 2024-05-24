@@ -13,7 +13,7 @@ connectDb()
 const app = express()
 const port = process.env.PORT
 const corsOptions = {
-    origin: "http://localhost:3000",
+    origin: "https://twitter-clone-frontend-silk.vercel.app",
     methods: 'GET, PUT, POST, DELETE',
     credentials: true
 }
