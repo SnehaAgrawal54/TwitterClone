@@ -29,6 +29,6 @@ app.use(cors(corsOptions));
 app.use("/api/v1/user", userRoute);
 app.use("/api/v1/tweet", tweetRoute);
 
-app.get((req,res)=>{res.json('Hello')})
+app.get('/', (req, res) => {res.json('Hello')});
 
 app.listen(port, () => { console.log(`Server listening on port ${port}`); })
